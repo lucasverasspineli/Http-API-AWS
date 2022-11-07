@@ -15,17 +15,17 @@ Esse projeto tem um intuito de orientar na criação de um Serverless Applicatio
 
 ### DynamoDB      
 
-![Icon-DynamoDB](.\img\icon-DynamoDb.png) 
+<img src="./img/icon-DynamoDb.png">
 O Amazon DynamoDB é um banco de dados NoSQL que suporta modelos de dados de valores-chave e de documentos. Os desenvolvedores podem usar o Amazon DynamoDB para criar aplicações modernas sem servidor, que podem começar pequenas e serem dimensionadas globalmente para oferecer suporte a petabytes e dezenas de milhões de solicitações de leitura e gravação por segundo.
 
 ### Lambda
 
-![Lambda](.\img\Lambda_resized.png) 
+<img src=".\img\Lambda_resized.png">
 O AWS Lambda é um serviço computacional sem servidor que executa código em resposta a eventos e gerencia automaticamente os recursos computacionais subjacentes para você. Esses eventos podem incluir mudanças no estado ou uma atualização, como um usuário colocando um item em um carrinho de compras de um site de comércio eletrônico por exemplo. 
 
 ### API Gateway
 
-![Lambda](.\img\API-Gateway_resized.png) 
+<img src=".\img\API-Gateway_resized.png"> 
 O Amazon API Gateway é um serviço da AWS para criação, publicação, manutenção, monitoramento e proteção de APIs REST e WebSocket em qualquer escala. Os desenvolvedores de API podem criar APIs que acessem a AWS ou outros web services, bem como dados armazenados na Nuvem AWS.
 
 
@@ -34,7 +34,8 @@ O Amazon API Gateway é um serviço da AWS para criação, publicação, manuten
 
 **I. Pesquisar o serviço no console da AWS**
 
-![Console-aws](.\img\Console-AWS-DynamoDB.png) 
+<img src=".\img\Console-AWS-DynamoDB.png"> 
+
 1. Buscar o serviço no console.  
 
 2. Escolher o serviço
@@ -43,7 +44,7 @@ O Amazon API Gateway é um serviço da AWS para criação, publicação, manuten
 
 > Todos os serviços serão feito na região da N.Virginia
 
-![Get Started-DynamoDB](.\img\GetStart-Dynamodb.png) 
+<img src=".\img\GetStart-Dynamodb.png">
 
 **II. Criação da tabela**
 
@@ -53,22 +54,24 @@ O Amazon API Gateway é um serviço da AWS para criação, publicação, manuten
 > 🔑  Não existe chave com auto-incremento na tabela não relacional
 3. Clicar no botão Create table
 
-![Get Started-DynamoDB](.\img\Create-Table-DynamoDB.png)
+<img src=".\img\Create-Table-DynamoDB.png">
 
 **III. Acessar o menu lateral Tables**  
 
 Clicar na tabela tbl-person
 
-![Get Started-DynamoDB](.\img\acess-table-DynamoDB.png)
+<img src=".\img\acess-table-DynamoDB.png">
 
 **IV Clique no botão Explore table items**
 
-Detalhamento sobre a tabela. ![Get Started-DynamoDB](img\Explore-Table-items.png)
+Detalhamento sobre a tabela.
+
+<img src=".\img\Explore-table-items.png">
 
 Caso queira pode nomear uma tag para tabela, seja criando um próprio nome ou com tag's já definidas como Aplicação, Homologação.
 Em Items returned está vazio pois não foi criado nenhum campo na tabela.
 
-![Get Started-DynamoDB](.\img\items-returned-DynamoDb.png)
+<img src=".\img\items-returned-DynamoDb.png">
 
 ## Inicializando o serviço Lambda
 
@@ -78,18 +81,18 @@ Em Items returned está vazio pois não foi criado nenhum campo na tabela.
 2. Escolher o serviço
 3. N.Virginia é a região que será hospedado este serviço. 
 
-![Get Started-DynamoDB](.\img\console-aws-Lambda.png)
+<img src=".\img\console-aws-Lambda.png">
 
 **II. Clicar no botão Create Function**
 
-![Get Started-DynamoDB](.\img\Lambda-functions.png)
+<img src=".\img\Lambda-functions.png">
 
 **III. Criando uma Função Lambda**
 
 1. Nomeando uma função Lambda
 2. Escolhendo uma linguagem de programação e sua versão, para criar o código da função com os endpoints na linguagem escolhida.
 
-![Get Started-DynamoDB](.\img\Create-Lambda.png)
+<img src=".\img\Create-Lambda.png">
 
 **IV. Criando e configurando uma Role**
 
@@ -108,7 +111,7 @@ Para criar uma Role com policy da própria AWS:
 3. Colocando uma Policy padrão **Simple microservice permissions**
 4. Clicar em Create Function
 
-![Get Started-DynamoDB](.\img\lambda-roles.png)
+<img src=".\img\lambda-roles.png">
 
 **VI. Criar um código para o CRUD em JS**
 
@@ -213,14 +216,14 @@ Exportando a função com um método assincrono
 
 **I. Pesquisar o serviço no console da AWS**
 
-![Get Started-API-Gateway](.\img\API-Gateway-search.png)
+<img src=".\img\API-Gateway-search.png">
 
 **II. Escolher o tipo de API**
 
 Nesse exemplo será uma HTTP API.
 
 A API sera responsável para disponibilzar um endpoint de HTTP para a função do lambda que foi criada.
-![Get Started-API-Gateway](.\img\HTTP_API-Gateway.png)
+<img src=".\img\HTTP_API-Gateway.png">
 
 **III. Criando a API**
 
@@ -230,7 +233,7 @@ Criando um nome para API
 
 Após isso clicar no Next.      
 
-![Get Started-API-Gateway](.\img\name-api-gateway.png)
+<img src=".\img\name-api-gateway.png">
 
 **IV. Criando rotas**
 
@@ -238,17 +241,17 @@ Após isso clicar no Next.
 
 Clicar em Next.
 
-![Get Started-API-Gateway](.\img\config-routes.png)
+<img src=".\img\config-routes.png">
 
 **V. Define stages**
 
 Clicar em Next.
 
-![Get Started-API-Gateway](.\img\define-status-api_Gateway.png)
+<img src=".\img\define-status-api_Gateway.png">
 
 **VI. Review da API**
 
-![Get Started-API-Gateway](.\img\Review-Api-Gateway.png)
+<img src=".\img\Review-Api-Gateway.png">
 
 **VII. Definindo as rotas**
 
@@ -258,49 +261,49 @@ Na Api que você criou clicar em Create.
 
 Para criar cada rota, no caso todas as rotas do CRUD.
 
-![Get Started-API-Gateway](.\img\Routes-api-gateway.png)
+<img src=".\img\Routes-api-gateway.png">
 
 ### IX. Criação de rotas Http
 
 **Criando a rota de Delete**
 
-Escolhendo o verbo Http específico e mapeando o caminho do mesmo jeito que está no função Lambda.
+Escolhendo o verbo Http específico e mapeando o caminho do mesmo jeito que está na função Lambda.
 
-![Get Started-API-Gateway](.\img\route-Delete.png)
+<img src=".\img\route-Delete.png">
 
 **Criando uma rota GET obtendo um ID**
 
 Mapeando o método GET para obter um objeto específico pelo ID.
 
-![Get Started-API-Gateway](.\img\route-GetById.png)
+<img src=".\img\route-GetById.png">
 
 **Criando uma rota GET obtendo uma Lista de Objetos**
 
 Mapeando o método GET objtendo todos os objetos da tabela tbl-Person.
 
-![Get Started-API-Gateway](.\img\Get-All.png)
+<img src=".\img\Get-All.png">
 
 **Criando uma rota PUT**
 
-![Get Started-API-Gateway](.\img\PUT-items.png)
+<img src=".\img\PUT-items.png">
 
 **Mostrando todas as rotas da API**
 
-![Get Started-API-Gateway](.\img\Routes-all-api-person.png)
+<img src=".\img\Routes-all-api-person.png">
 
 ## Fazendo toda a comunicação entre API, função Lambda e o banco DynamoDB
 
 >Tem que realizar a integração da comunicação entre as rotas do Api-Gateway para a rotas da função Lambda, para poder realizar o CRUD com o banco de dados.
 
-![Lambda](.\img\fluxo-aws-SAM.png) 
+<img src=".\img\Fluxo-aws-SAM.png">
 
 Clicando no Integrations no menu lateral, e criando um gerenciamento para a integração.
 
-![Get Started-API-Gateway](.\img\Integrations-routes.png)
+<img src=".\img\Integrations-routes.png">
 
 Criando um tipo de integração, escolhendo uma integração Lambda Function.
 
-![Get Started-API-Gateway](.\img\create-integration.png)
+<img src=".\img\create-integration.png">
 
 **Detalhes de Integração**
 
@@ -309,7 +312,7 @@ Associando uma função lambda com a integração da API que foi criada.
 escolhendo a região.
 Depois clicar em Next.
 
-![Get Started-API-Gateway](.\img\integrations-details.png)
+<img src=".\img\integrations-details.png">
 
 ### Integração dos métodos Http 
 
@@ -321,21 +324,21 @@ Clicando no Attach integrations to routes.
 
 Clicando no método PUT, e escolhendo a função lambda para integrar o mapeamento.
 
-![Get Started-API-Gateway](.\img\integration-route-PUT.png)
+<img src=".\img\integration-route-PUT.png">
 
 Método integrado e mapeado com a função lambda
 
-![Get Started-API-Gateway](.\img\PUT-aws_lambda.png)
+<img src=".\img\PUT-aws_lambda.png">
 
 Fazer o mesmo processo com todos os outros métodos.
 
 Todos os métodos mapeados e integrados, ficam assim :
 
- ![Get Started-API-Gateway](.\img\review-integrations.png)
+<img src=".\img\review-integrations.png">
 
 Para acessar a URL da API, tem que ir no menu lateral e clicar em API: nome-sua-API
 
-![Get Started-API-Gateway](.\img\URL-Api_Gateway.png)
+<img src=".\img\URL-Api_Gateway.png">
 
 ## ⚡ Os testes foram feitos com o Software Postman ⚡
 
@@ -345,30 +348,30 @@ Adicionando um objeto na tabela tbl-person.
 >Colocando no Postman a URL da API/caminho dos métodos, que está na API Gateway de cada verbo Http.
 Todos os dados estão no arquivo **Dados_tbl-person-JSON.**
 
-![Get Started-API-Gateway](.\img\Postman-PUT.png)
+<img src=".\img\Postman-PUT.png">
 
 * GET
 
 Obtendo um registro da tabela tbl-Person pelo ID.
 
-![Get Started-API-Gateway](.\img\Postman-GET-ID.png)
+<img src=".\img\Postman-GET-ID.png">
 
 * GET-ALL
 
 Listando todos os dados na tabela tbl-person, após adicionar os objetos na tabela.
 
-![Get Started-API-Gateway](.\img\Postman-GET-ALL.png)
+<img src=".\img\Postman-GET-ALL.png">
 
 * DELETE
 
 Deletando um objeto da tabela tbl-person, pelo seu ID.
 
-![Get Started-API-Gateway](.\img\Postman-DELETE.png)
+<img src=".\img\Postman-DELETE.png">
 
-## Demonstrando os dados na tabela DynamoDB ![Get Started-API-Gateway](.\img\database.png)
+## Demonstrando os dados na tabela DynamoDB <img src=".\img\database.png">
 
 Demonstrando a tabela tbl-person sendo povoada, pelo Postman.
 
-![Get Started-API-Gateway](.\img\intems-returned-Dynamo.png)
+<img src=".\img\intems-returned-Dynamo.png">
 
 Com isso todo o sistema está finalizado.
